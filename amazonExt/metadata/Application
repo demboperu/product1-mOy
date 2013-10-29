@@ -1,0 +1,48 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Category",
+            "Product"
+        ],
+        "stores": [
+            "Category",
+            "Product"
+        ],
+        "views": [
+            "MyViewport"
+        ],
+        "autoCreateViewport": true,
+        "controllers": [
+            "AmazonExt"
+        ],
+        "name": "amzExt"
+    },
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "console.log('Launch');",
+                    "//console.log(Ext.ComponentQuery.query('viewport')[0]);",
+                    "this.viewport = Ext.ComponentQuery.query('viewport')[0];",
+                    "Ext.getCmp('txtEmail').focus();",
+                    "//console.log(Ext.getCmp('txtEmail'));"
+                ]
+            },
+            "designerId": "4e6eeb35-9f8e-46b3-ae8e-f9f106bfe6ee"
+        }
+    ]
+}

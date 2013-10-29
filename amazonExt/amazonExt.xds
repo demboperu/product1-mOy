@@ -1,0 +1,103 @@
+{
+    "name": "amazonExt",
+    "settings": {
+        "spacesToIndent": 4,
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "urlPrefix": "http://localhost/projects/amazonExt/",
+        "exportPath": "",
+        "buildShouldOverwriteIndex": true
+    },
+    "xdsVersion": "2.2.3",
+    "xdsBuild": 1044,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "ext42",
+    "topInstanceFileMap": {
+        "18dc141c-3544-4c8c-bf98-cf19f4cddc3c": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "fb8c3833-ad09-4ae0-9509-e2ad8199225b": {
+            "paths": [
+                "metadata/view/MyViewport",
+                "app/view/override/MyViewport.js",
+                "app/view/MyViewport.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "MyViewport"
+        },
+        "c7ca6c36-bb8e-4314-a40a-7b9fa90938bc": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        },
+        "3f9a021c-1271-4c2e-ba7c-e602f882627f": {
+            "paths": [
+                "metadata/store/Category",
+                "app/store/override/Category.js",
+                "app/store/Category.js"
+            ],
+            "className": "Category"
+        },
+        "a88d90c8-6786-48a8-90f9-0f303a0845ec": {
+            "paths": [
+                "metadata/model/Category",
+                "app/model/override/Category.js",
+                "app/model/Category.js"
+            ],
+            "className": "Category"
+        },
+        "cc243500-df60-42aa-8e7a-a749babcf218": {
+            "paths": [
+                "metadata/model/Product",
+                "app/model/override/Product.js",
+                "app/model/Product.js"
+            ],
+            "className": "Product"
+        },
+        "abdaa5d3-7c9c-40b6-aa0d-689a20447468": {
+            "paths": [
+                "metadata/store/Product",
+                "app/store/override/Product.js",
+                "app/store/Product.js"
+            ],
+            "className": "Product"
+        },
+        "9797a19c-f1ce-48b0-862f-3c66b89a4cad": {
+            "paths": [
+                "metadata/controller/AmazonExt",
+                "app/controller/override/AmazonExt.js",
+                "app/controller/AmazonExt.js"
+            ],
+            "className": "AmazonExt"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "fb8c3833-ad09-4ae0-9509-e2ad8199225b"
+        ],
+        "store": [
+            "3f9a021c-1271-4c2e-ba7c-e602f882627f",
+            "abdaa5d3-7c9c-40b6-aa0d-689a20447468"
+        ],
+        "controller": [
+            "9797a19c-f1ce-48b0-862f-3c66b89a4cad"
+        ],
+        "model": [
+            "a88d90c8-6786-48a8-90f9-0f303a0845ec",
+            "cc243500-df60-42aa-8e7a-a749babcf218"
+        ],
+        "resource": [
+            "18dc141c-3544-4c8c-bf98-cf19f4cddc3c",
+            "c7ca6c36-bb8e-4314-a40a-7b9fa90938bc"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

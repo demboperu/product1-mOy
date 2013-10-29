@@ -1,0 +1,1002 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyViewport",
+        "designer|initialView": true,
+        "autoScroll": true,
+        "layout": "card"
+    },
+    "designerId": "fb8c3833-ad09-4ae0-9509-e2ad8199225b",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|snapToGrid": 10,
+                "layout": "absolute",
+                "bodyPadding": 10,
+                "headerPosition": null,
+                "title": "Login",
+                "titleAlign": "center"
+            },
+            "designerId": "a41bf6e7-8807-48ae-a9ed-726a4d515ca5",
+            "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|snapToGrid": 10,
+                        "padding": 50,
+                        "layout": "absolute"
+                    },
+                    "designerId": "da3fe5de-43f7-4108-a3f0-058c894282fc",
+                    "cn": [
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|x": 100,
+                                "layout|y": 70,
+                                "cls": "lblLogin lblLoginOrange",
+                                "text": "Sig in"
+                            },
+                            "designerId": "bb364a99-5b8c-4fa2-852d-dc1ec927226f"
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|x": 100,
+                                "layout|y": 100,
+                                "padding": null
+                            },
+                            "designerId": "a7cb99c8-3b06-4330-b21b-a25215132ba8",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": "lblLogin lblLoginOrange",
+                                        "id": null,
+                                        "itemId": null,
+                                        "padding": null,
+                                        "text": "What is your e-mail address?"
+                                    },
+                                    "designerId": "ab5d279e-7f58-4516-b8c7-8cfb9f712162"
+                                },
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": null,
+                                        "id": "txtEmail",
+                                        "margin": "10 20",
+                                        "width": 400,
+                                        "fieldLabel": "My e-mail address is:",
+                                        "labelClsExtra": null,
+                                        "labelWidth": 150,
+                                        "msgTarget": "side",
+                                        "inputType": "email",
+                                        "allowBlank": false,
+                                        "vtype": "email"
+                                    },
+                                    "designerId": "139478fe-4e41-4a6e-ab21-f2615739076f"
+                                },
+                                {
+                                    "type": "Ext.form.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": "lblLogin lblLoginOrange",
+                                        "text": "Do you have an AmazonExt.com password?"
+                                    },
+                                    "designerId": "a7417a17-6730-4b65-9205-925319bf34aa"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|anchor": null,
+                                "layout|x": 100,
+                                "layout|y": 180,
+                                "designer|snapToGrid": 10,
+                                "layout": "absolute"
+                            },
+                            "designerId": "09ef7cd0-d4a5-453e-9bfa-6bcc5ee57d48",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.RadioGroup",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|x": 10,
+                                        "layout|y": 0,
+                                        "formBind": false,
+                                        "container|align": "stretch",
+                                        "margin": 10,
+                                        "width": 400,
+                                        "layout": "vbox",
+                                        "fieldLabel": "Label",
+                                        "hideLabel": true,
+                                        "labelClsExtra": null
+                                    },
+                                    "designerId": "c5ab2d7a-5fbc-4d17-a29b-576b8e284661",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.field.Radio",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "cls": "",
+                                                "id": "rdoNo",
+                                                "fieldLabel": null,
+                                                "labelClsExtra": "lblLogin",
+                                                "name": "radio",
+                                                "boxLabel": "No, I am a new customer.",
+                                                "inputValue": null
+                                            },
+                                            "designerId": "7d183435-ce0c-47b9-a64f-ce99ffcbbadb"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Radio",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": null,
+                                                "name": "radio",
+                                                "boxLabel": "Yes, I have a password:",
+                                                "checked": true,
+                                                "inputValue": null
+                                            },
+                                            "designerId": "06755da3-bfd6-4ef9-86be-2dbc8038d755"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.container.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|x": 175,
+                                        "layout|y": 35
+                                    },
+                                    "designerId": "f00a597c-c2bd-4b84-a809-73bb5757f715",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "cls": "inputPass",
+                                                "id": "txtPass",
+                                                "itemId": null,
+                                                "fieldBodyCls": "",
+                                                "fieldLabel": "Label",
+                                                "hideLabel": true,
+                                                "labelClsExtra": null,
+                                                "msgTarget": "side",
+                                                "fieldStyle": "",
+                                                "inputId": "txtPassword",
+                                                "inputType": "password",
+                                                "allowBlank": false
+                                            },
+                                            "designerId": "6d770e36-5546-4285-a070-6338f7253ff6"
+                                        },
+                                        {
+                                            "type": "Ext.form.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Forgot your password?"
+                                            },
+                                            "designerId": "9cae9bfc-4035-4e0a-bdf8-9c70f937c5d0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|x": 100,
+                                "layout|y": 260,
+                                "id": "signIn",
+                                "text": "Sign in using our secure server"
+                            },
+                            "designerId": "22eb122b-eae0-46e1-8776-423d2c3606c1"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 500,
+                        "layout|y": 170,
+                        "height": 100,
+                        "width": 201,
+                        "src": "http://localhost/amazonExt/resources/imgs/amazonext.png"
+                    },
+                    "designerId": "4213da2c-9bf5-4845-aa9a-309ae1d58fdd"
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": "fondo",
+                "layout": "border",
+                "header": false,
+                "title": "AmazonExt"
+            },
+            "designerId": "266f402b-9bb8-4093-a386-606dc45c8dc5",
+            "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|region": "north",
+                        "designer|snapToGrid": 10,
+                        "cls": "fondo",
+                        "height": 100,
+                        "layout": "absolute"
+                    },
+                    "designerId": "5fbfafba-652a-4630-8adf-2fba1c2f03b8",
+                    "cn": [
+                        {
+                            "type": "Ext.Img",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "width": 350,
+                                "src": "http://localhost/amazonExt/resources/imgs/amazonext.png"
+                            },
+                            "designerId": "5e9b7659-e860-4de7-aec4-2e23f66b949c"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|anchor": null,
+                                "layout|x": 850,
+                                "layout|y": 76,
+                                "height": null,
+                                "id": "signOut",
+                                "text": "SignOut"
+                            },
+                            "designerId": "4f38e623-459c-45e8-8be8-5031e86c302d"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|region": "west",
+                        "cls": "fondo",
+                        "width": null,
+                        "layout": null
+                    },
+                    "designerId": "916d15eb-04d6-4b11-9b6b-daf4383d0fd9",
+                    "cn": [
+                        {
+                            "type": "Ext.menu.Menu",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": null,
+                                "floating": false,
+                                "height": null,
+                                "padding": 10,
+                                "width": 200,
+                                "shadow": null,
+                                "bodyBorder": false,
+                                "animCollapse": false,
+                                "collapseDirection": "left",
+                                "collapseFirst": false,
+                                "collapsed": false,
+                                "collapsible": true,
+                                "iconCls": "",
+                                "title": "Shop by Departament",
+                                "titleCollapse": true,
+                                "showSeparator": false
+                            },
+                            "designerId": "48e03db9-5fed-4235-bf9e-03dd9998a303",
+                            "cn": [
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "padding": 7,
+                                        "iconCls": "",
+                                        "plain": true,
+                                        "text": "MP3s & Cloud Player"
+                                    },
+                                    "designerId": "105a7da0-9961-4af5-ad99-27bbfbead9e3",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.menu.Menu",
+                                            "reference": {
+                                                "name": "menu",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "border": false,
+                                                "cls": null,
+                                                "height": 300,
+                                                "minWidth": 400,
+                                                "padding": "",
+                                                "width": 400,
+                                                "bodyBorder": false,
+                                                "icon": null,
+                                                "title": "MP3s & Cloud player",
+                                                "plain": true
+                                            },
+                                            "designerId": "1ed63b0f-f2d5-472b-9304-4c01db7221d1",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.menu.Item",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "height": null,
+                                                        "padding": 5,
+                                                        "width": null,
+                                                        "plain": true,
+                                                        "text": "MP3 Store"
+                                                    },
+                                                    "designerId": "1200ec3c-7cb7-41c3-a487-2ff2ec290a7e"
+                                                },
+                                                {
+                                                    "type": "Ext.menu.Item",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "padding": 5,
+                                                        "plain": true,
+                                                        "text": "Best Sellers"
+                                                    },
+                                                    "designerId": "9efcae5a-9caa-4d8d-a8a6-4cad9cc5f5c8"
+                                                },
+                                                {
+                                                    "type": "Ext.menu.Item",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "padding": 5,
+                                                        "plain": true,
+                                                        "text": "New Releases"
+                                                    },
+                                                    "designerId": "3f5720af-4f0c-46e9-ab4c-e64ddde09676"
+                                                },
+                                                {
+                                                    "type": "Ext.menu.Item",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "padding": 5,
+                                                        "plain": true,
+                                                        "text": "Deals"
+                                                    },
+                                                    "designerId": "50d97a2f-7c09-4047-9595-3a41097f743c"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": null,
+                                        "padding": 7,
+                                        "width": null,
+                                        "iconCls": "no-icon",
+                                        "plain": true,
+                                        "text": "Amazon Cloud Drive"
+                                    },
+                                    "designerId": "fe885e2f-e117-4a37-b668-da2381c310b0",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.menu.Menu",
+                                            "reference": {
+                                                "name": "menu",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "height": 300,
+                                                "minWidth": 400,
+                                                "width": 400,
+                                                "title": "Amazon Cloud Drive"
+                                            },
+                                            "designerId": "37fd5314-8a88-4b9a-92af-b62a0df0751b",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.menu.Item",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "padding": 5,
+                                                        "plain": true,
+                                                        "text": "Your Cloud Drive"
+                                                    },
+                                                    "designerId": "e770568f-9735-43b7-8395-ec164b618141"
+                                                },
+                                                {
+                                                    "type": "Ext.menu.Item",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "padding": 5,
+                                                        "plain": true,
+                                                        "text": "Get the Desktop App"
+                                                    },
+                                                    "designerId": "d119e382-8eaf-4582-bd4a-dc54bc2135e2"
+                                                },
+                                                {
+                                                    "type": "Ext.menu.Item",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "padding": 5,
+                                                        "plain": true,
+                                                        "text": "Cloud Drive Photos for Android"
+                                                    },
+                                                    "designerId": "605918b6-0a5b-48f9-bb47-ca26a144f1f0"
+                                                },
+                                                {
+                                                    "type": "Ext.menu.Item",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "padding": 5,
+                                                        "plain": true,
+                                                        "text": "Cloud Drive Photos for iPhone"
+                                                    },
+                                                    "designerId": "124274a5-7c08-4014-aa36-52fdc421b1d0"
+                                                },
+                                                {
+                                                    "type": "Ext.menu.Item",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "padding": 5,
+                                                        "plain": true,
+                                                        "text": "Learn more about Cloud Drive"
+                                                    },
+                                                    "designerId": "a398ff48-3c17-4ab1-b4cb-71bee832f430"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "padding": 7,
+                                        "plain": true,
+                                        "text": "Kindle"
+                                    },
+                                    "designerId": "3972323b-5002-4d05-9e29-f3e275ee880e"
+                                },
+                                {
+                                    "type": "Ext.menu.Separator",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "designerId": "8c644c43-e674-4a04-bfa5-7199e9f87e22"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "padding": 7,
+                                        "plain": true,
+                                        "text": "Books"
+                                    },
+                                    "designerId": "508cdd4a-45f2-47b9-bbc7-0eb981edc2a4"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "padding": 7,
+                                        "plain": true,
+                                        "text": "Movies, Music & Games"
+                                    },
+                                    "designerId": "3df5dc34-78ca-48ba-bd88-44d42c6b02a3"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "padding": 7,
+                                        "plain": true,
+                                        "text": "Electronics & Computers"
+                                    },
+                                    "designerId": "5627aa1c-3917-4b40-a2c1-1235d269178e"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "padding": 7,
+                                        "plain": true,
+                                        "text": "Home, Garden & Tools"
+                                    },
+                                    "designerId": "9dc810f1-4fca-4c2c-91f4-0790f819698a"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "padding": 7,
+                                        "plain": true,
+                                        "text": "Beauty, Health & Grocery"
+                                    },
+                                    "designerId": "05bdd73a-9863-490f-9c4f-b14732b1d00f"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "padding": 7,
+                                        "plain": true,
+                                        "text": "Toys, Kids & Baby"
+                                    },
+                                    "designerId": "e5a10835-6b3e-48fe-9521-8a1867280cae"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "padding": 7,
+                                        "plain": true,
+                                        "text": "Clothing, Shoes & Jewelry"
+                                    },
+                                    "designerId": "1bf30ad8-1e92-4ebf-a5b0-f2add7d27cda"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "padding": 7,
+                                        "plain": true,
+                                        "text": "Sports & Outdoors"
+                                    },
+                                    "designerId": "f0e90b61-981a-482c-a332-4ee9f25bec82"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "padding": 7,
+                                        "plain": true,
+                                        "text": "Automotive & Industrial"
+                                    },
+                                    "designerId": "126aa6dd-71da-40eb-bfb4-e68a0eebb843"
+                                },
+                                {
+                                    "type": "Ext.menu.Separator",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "designerId": "b665ff0e-a39f-41dc-b02d-8db481add6d3"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "padding": 7,
+                                        "plain": true,
+                                        "text": "Full Store Directory"
+                                    },
+                                    "designerId": "b6639391-172d-4c96-a7c1-a8247dc29d4d"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|region": "center",
+                        "cls": "fondo"
+                    },
+                    "designerId": "9ef25604-2a79-481c-ae90-adfcd0acb199",
+                    "cn": [
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": null,
+                                "height": null,
+                                "padding": 10,
+                                "layout": null
+                            },
+                            "designerId": "e1094409-7437-4123-9059-6bf32e7f1397",
+                            "cn": [
+                                {
+                                    "type": "Ext.container.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "container|align": "stretch",
+                                        "cls": null,
+                                        "layout": "hbox"
+                                    },
+                                    "designerId": "3208c7ae-7220-43b2-a041-a6b7498c1b15",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.field.ComboBox",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "autoRender": false,
+                                                "cls": null,
+                                                "id": "cboCategory",
+                                                "itemId": null,
+                                                "width": 240,
+                                                "fieldLabel": "Search",
+                                                "labelWidth": 40,
+                                                "value": null,
+                                                "emptyText": "All",
+                                                "displayField": "name",
+                                                "queryMode": "local",
+                                                "store": "Category",
+                                                "valueField": "id"
+                                            },
+                                            "designerId": "3f58e919-0893-4e09-83df-70e450f8f0d6"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "cls": "search",
+                                                "id": "txtSearch",
+                                                "width": null,
+                                                "fieldLabel": "Label",
+                                                "hideLabel": true
+                                            },
+                                            "designerId": "7c2108c3-2c2b-45b6-ba51-a728ebbfef92"
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "cls": "search",
+                                                "id": "btnGoSearch",
+                                                "text": "Go"
+                                            },
+                                            "designerId": "e6acb3ee-f02c-4f65-8be4-9e2b5fc9d5c9"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": "search-detail",
+                                        "autoScroll": true,
+                                        "title": null
+                                    },
+                                    "designerId": "65a19723-f88b-4f64-9b5d-cc410a7b5f37",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.view.View",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dock": null,
+                                                "cls": null,
+                                                "id": "productsView",
+                                                "itemId": "",
+                                                "overCls": "overproducts",
+                                                "width": null,
+                                                "autoScroll": true,
+                                                "itemCls": "products",
+                                                "itemSelector": null,
+                                                "overItemCls": "overproducts",
+                                                "store": "Product"
+                                            },
+                                            "designerId": "b5f73033-cd09-43fd-a882-43401eb05ce1",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.XTemplate",
+                                                    "reference": {
+                                                        "name": "itemTpl",
+                                                        "type": "object"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "implHandler": [
+                                                            "<div id=\"idProduct\">",
+                                                            "    <div class=\"imgProd\">",
+                                                            "        <img src=\"{img}\" />",
+                                                            "    </div>",
+                                                            "    <div class=\"descProd\">",
+                                                            "        <a href=\"javascript:;\">{name}</a><br/>",
+                                                            "        <span>{price}<img id='imgPrime' style:\"width:45px;heigth:17px;\" src=\"{[this.resolveImage(values.prime)]}\" /></span><br/>",
+                                                            "        <span>{rate}</span><br/>",
+                                                            "        <span>{stock}</span><br/>",
+                                                            "    </div>",
+                                                            "</div>"
+                                                        ],
+                                                        "designer|displayName": "itemTpl"
+                                                    },
+                                                    "designerId": "3411b8bf-b078-4a7e-84dd-cf10033abbd5",
+                                                    "cn": [
+                                                        {
+                                                            "type": "templatefunction",
+                                                            "reference": {
+                                                                "name": "items",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "fn": "resolveImage",
+                                                                "designer|params": [
+                                                                    "prime"
+                                                                ],
+                                                                "implHandler": [
+                                                                    "console.log('EntroFun');",
+                                                                    "if (prime == 1) {",
+                                                                    "    return 'metadata/resource/img/prime.jpg';",
+                                                                    "}",
+                                                                    "else {",
+                                                                    "    return '';",
+                                                                    "}"
+                                                                ],
+                                                                "designer|displayName": null
+                                                            },
+                                                            "designerId": "640cfdff-0101-4257-a85c-3af6dd8a8291"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|region": "east",
+                        "cls": "fondo",
+                        "width": null
+                    },
+                    "designerId": "5a1dfb7a-980e-4e2d-ad23-b3cb3b5f5a04",
+                    "cn": [
+                        {
+                            "type": "Ext.Img",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 500,
+                                "padding": 10,
+                                "width": null,
+                                "src": "http://localhost/amazonExt/resources/imgs/ad.png"
+                            },
+                            "designerId": "519f8b3b-e135-4364-8656-1755e48f3337"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

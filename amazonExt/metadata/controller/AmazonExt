@@ -1,0 +1,286 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "AmazonExt"
+    },
+    "designerId": "9797a19c-f1ce-48b0-862f-3c66b89a4cad",
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onLoginClick",
+                "designer|params": [
+                    "button"
+                ],
+                "implHandler": [
+                    "console.log('Click on SignIn button');",
+                    "var userName = this.getTxtEmail().getValue();",
+                    "var userPass = this.getTxtPass().getValue();",
+                    "",
+                    "//Change to 2nd view",
+                    "this.application.viewport.layout.setActiveItem(1);",
+                    "",
+                    "this.getTxtEmail().setValue(\"\");",
+                    "this.getTxtPass().setValue(\"\");"
+                ]
+            },
+            "designerId": "0b4c283a-6923-4ac3-98b6-49c45d35f427"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "init",
+                "designer|params": [
+                    "application"
+                ],
+                "implHandler": [
+                    "console.log('Init');",
+                    "this.control({",
+                    "    \"#signIn\" : {",
+                    "        click : this.onLoginClick",
+                    "    },",
+                    "",
+                    "    \"#rdoNo\" : {",
+                    "        change: this.onRdgChange",
+                    "    },",
+                    "",
+                    "    \"#signOut\" : {",
+                    "        click: this.onLoginOutClick",
+                    "    },",
+                    "    ",
+                    "    \"#btnGoSearch\" : {",
+                    "        click : this.onSearchClick",
+                    "    }",
+                    "});"
+                ]
+            },
+            "designerId": "d7903c7c-9f0c-4c89-ab05-ec9bf7a7ddbd"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "txtEmail",
+                "selector": "#txtEmail"
+            },
+            "designerId": "e791581c-3e16-4a04-8adc-8c686b8c6731"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "txtPass",
+                "selector": "#txtPass"
+            },
+            "designerId": "250f8435-04dc-4dc4-aac4-6c574230c600"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onRdgChange",
+                "designer|params": [
+                    "radiofield"
+                ],
+                "implHandler": [
+                    "console.log('Change radiogroup');",
+                    "if(radiofield.checked==true){",
+                    "    //console.log(txtPassword);",
+                    "    txtPassword.disabled = true;",
+                    "    txtPassword.className = txtPassword.className + 'inputPass';",
+                    "}else{",
+                    "    txtPassword.disabled = false;",
+                    "    txtPassword.className = txtPassword.className.replace( /(?:^|\\s)inputPass(?!\\S)/g , '' );",
+                    "}"
+                ]
+            },
+            "designerId": "b4aa364c-8f2a-4d08-bdc0-c042ac83ae9b"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "cboCategory",
+                "selector": "cboCategory"
+            },
+            "designerId": "b0335cd5-c307-4a0d-8284-f44da551673c"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onLoginOutClick",
+                "designer|params": [
+                    "button"
+                ],
+                "implHandler": [
+                    "console.log('Click on SignOut button');",
+                    "this.application.viewport.layout.setActiveItem(0);"
+                ]
+            },
+            "designerId": "39c15406-eb3a-4798-b573-efcdcfb83e85"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onSearchClick",
+                "designer|params": [
+                    "button"
+                ],
+                "implHandler": [
+                    "console.log('ClickSearch');",
+                    "",
+                    "var productToSearch = this.getTxtSearch().getValue().toLowerCase();",
+                    "var valCateg = Ext.getCmp('cboCategory').getValue();",
+                    "",
+                    "//console.log(Ext.getStore('Product'));",
+                    "//console.log(cboCateg);",
+                    "var storeProduct = Ext.getStore('Product');",
+                    "//storeProduct.load();",
+                    "var productsView = Ext.getCmp('productsView');",
+                    "//console.log(productsView.store);",
+                    "",
+                    "//storeProduct.clearFilter();",
+                    "/*storeProduct.load().filterBy(function(rec){",
+                    "    console.log(productToSearch);",
+                    "    console.log(rec.get('name').toLowerCase().indexOf(productToSearch) > -1);",
+                    "\treturn rec.get('name').toLowerCase().indexOf(productToSearch) > -1;",
+                    "});*/",
+                    "",
+                    "/*storeProduct.load({",
+                    "\turl:'data/product.json'",
+                    "});*/",
+                    "",
+                    "/*console.log(storeProduct.load({",
+                    "\turl:'data/product.json'",
+                    "}).find('name',productToSearch));*/",
+                    "",
+                    "/*productsView.load({",
+                    "    callback: function(rs) {",
+                    "        console.log(rs);",
+                    "        console.log('name:');",
+                    "        console.log(this.find('name', productToSearch));",
+                    "    }",
+                    "});*/",
+                    "",
+                    "/*storeProduct.load().filter([",
+                    "   {filterFn: function(item) ",
+                    "    { ",
+                    "        console.log(item.get('name'));",
+                    "        return item.get('name') == productToSearch; ",
+                    "    }",
+                    "   }",
+                    "]);*/",
+                    "",
+                    "/*storeProduct.load().filterBy(function(record,id){",
+                    "    ",
+                    "\treturn (record.get('name') == productToSearch && record.get('category') == valCateg);",
+                    "});*/",
+                    "",
+                    "/*storeProduct.reload().filter([",
+                    "    {property: \"category\", value: valCateg},",
+                    "    //{property: \"name\", value: productToSearch}",
+                    "    {filterFn: function(rec) {",
+                    "        return rec.get('name').indexOf(productToSearch) > -1;",
+                    "    }}]);*/",
+                    "",
+                    "",
+                    "/*storeProduct.filterBy(function(rec,id){",
+                    "    console.log(rec.get('name').toLowerCase());",
+                    "\t//return rec.get('name').toLowerCase().indexOf(productToSearch) > -1;",
+                    "    return rec.get('category') == valCateg;",
+                    "});*/",
+                    "",
+                    "",
+                    "/*storeProduct.load({",
+                    "    filters:[",
+                    "\t\t{property: \"category\", value: valCateg},",
+                    "\t\t{filterFn: function(rec) { return rec.get('stock').toLowerCase().indexOf(productToSearch) > -1; }}",
+                    "    ]  ",
+                    "});*/",
+                    "",
+                    "",
+                    "/*storeProduct.filter([",
+                    "    Ext.create('Ext.util.Filter', {property: \"category\", value: valCateg, root: 'data'}),",
+                    "    Ext.create('Ext.util.Filter', {filterFn: function(rec) { return rec.get('name').toLowerCase().indexOf(productToSearch) > -1; }, root: 'data'})",
+                    "]);*/",
+                    "//productsView.store = storeProduct.load();",
+                    "",
+                    "console.log(productToSearch);",
+                    "console.log(valCateg);",
+                    "",
+                    "storeProduct.clearFilter(true);",
+                    "",
+                    "storeProduct.load().filter([",
+                    "    //{property: \"category\", value: valCateg},",
+                    "    {filterFn: function(rec){",
+                    "        if(valCateg==1 || valCateg === null) ",
+                    "\t\t\treturn rec.get('name').toLowerCase().indexOf(productToSearch) > -1;",
+                    "\t\telse",
+                    "\t\t\treturn rec.get('name').toLowerCase().indexOf(productToSearch) > -1 && rec.get('category') == valCateg;",
+                    "\t\t}",
+                    "    }",
+                    "]);",
+                    "",
+                    "",
+                    "//storeProduct.load();",
+                    ""
+                ]
+            },
+            "designerId": "b2b51bf8-d294-4d03-b413-48ebaa9019a6"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "txtSearch",
+                "selector": "#txtSearch"
+            },
+            "designerId": "33e3432e-8bb8-458e-99f7-312d9f270a4e"
+        }
+    ]
+}

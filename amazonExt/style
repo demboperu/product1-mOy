@@ -1,0 +1,41 @@
+.lblLogin{
+	font-weight: bold;
+}
+.lblLoginOrange{
+    color: #E47911;
+}
+.inputPass{
+    background-image:none;
+    background-color:#eee;
+}
+.fondo{
+	background-color:#FFFFFF;
+}
+#idProduct{
+    width:100%;
+    border:2px solid;
+    display:inline-block;
+}
+.imgProd{
+    float:left;
+}
+.descProd{
+    float:left;
+    padding:30px;
+}
+div.products{
+	padding: 15px 25px 10px 25px; 
+}
+div.products a img{
+    width:190px;
+    heigth:190px;
+}
+div.products a{
+    left:250px;
+}
+div.products span{
+    left:250px;
+    font-size:12px;
+    font-weight:bold;
+    margin:2px;
+}
